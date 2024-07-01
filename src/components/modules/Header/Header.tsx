@@ -13,7 +13,7 @@ function Header() {
 
   return (
     <>
-      <header className="fixed inset-x-0 py-1 bg-[#000000cc]">
+      <header className="fixed inset-x-0 py-1 bg-[#000000cc] z-10">
         <div className="container">
           <div className="flex items-center justify-between">
             <div
@@ -66,14 +66,14 @@ function Header() {
 
       <>
         <div
-          className={`fixed inset-0 bg-[#0000008a] z-10 ${
+          className={`fixed inset-0 bg-[#0000008a] z-20 ${
             isShowMenu ? "block opacity-100" : "hidden opacity-0"
-          }  md:opacity-0 md:block transition-all`}
+          }  md:opacity-0 md:hidden transition-all`}
           onClick={hideMenu}
         ></div>
 
         <div
-          className={`fixed inset-y-0 w-72 max-w-[100vw] bg-[#000000cc] z-20 px-4 py-6  ${
+          className={`fixed inset-y-0 w-72 max-w-[100vw] bg-[#000000cc] z-30 px-4 py-6  ${
             isShowMenu ? "right-0" : "-right-full"
           }
            transition-all md:-right-full`}
