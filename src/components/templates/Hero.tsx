@@ -1,4 +1,7 @@
 import React from "react";
+import Box from "../modules/Box/Box";
+import { FaDatabase, FaPaintRoller, FaStore, FaToolbox } from "react-icons/fa";
+import { FaChartColumn } from "react-icons/fa6";
 
 function Hero() {
   return (
@@ -15,7 +18,13 @@ function Hero() {
               ما تیمی از بازاریابان با استعداد دیجیتال هستیم
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5"></div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 my-20 gap-2">
+            <Box title="متن نمایشی" logo={<FaStore />} />
+            <Box title="نمودار کیفی" logo={<FaChartColumn />} />
+            <Box title="نمونه کارها" logo={<FaToolbox />} />
+            <Box title="عملکردهای پایانی" logo={<FaPaintRoller />} />
+            <Box title="اطلاعات ذخیره شده" logo={<FaDatabase />} />
+          </div>
         </div>
       </section>
     </>
