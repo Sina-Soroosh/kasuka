@@ -18,6 +18,13 @@ const config: Config = {
           DEFAULT: "#fdc250",
         },
       },
+      fontFamily: {
+        iransans: "iransanas",
+      },
+    },
+    container: {
+      center: true,
+      padding: "10px",
     },
   },
   plugins: [],

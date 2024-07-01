@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: iransans;
+        src: url("../fonts/IRANSansX-Light.woff");
+    }
+
+    body {
+        direction: rtl;
+    }
+
+    body * {
+        font-family: iransans;
+    }
+}
