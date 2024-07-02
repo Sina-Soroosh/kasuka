@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import PortfolioItem from "../modules/PortfolioItem/PortfolioItem";
 
 type Categories = "program" | "internet" | "product";
 
@@ -15,55 +16,55 @@ const products: Product[] = [
   {
     id: 1,
     title: "اینترنت 1",
-    img: "/image/portfolio/portfolio-1.jpg",
+    img: "/images/portfolio/portfolio-1.jpg",
     category: "internet",
   },
   {
     id: 2,
     title: "محصول 1",
-    img: "/image/portfolio/portfolio-1.jpg",
+    img: "/images/portfolio/portfolio-2.jpg",
     category: "product",
   },
   {
     id: 3,
     title: "برنامه 1",
-    img: "/image/portfolio/portfolio-1.jpg",
+    img: "/images/portfolio/portfolio-3.jpg",
     category: "program",
   },
   {
     id: 4,
     title: "اینترنت 2",
-    img: "/image/portfolio/portfolio-1.jpg",
+    img: "/images/portfolio/portfolio-4.jpg",
     category: "internet",
   },
   {
     id: 5,
     title: "محصول 2",
-    img: "/image/portfolio/portfolio-1.jpg",
+    img: "/images/portfolio/portfolio-5.jpg",
     category: "product",
   },
   {
     id: 6,
     title: "برنامه 2",
-    img: "/image/portfolio/portfolio-1.jpg",
+    img: "/images/portfolio/portfolio-6.jpg",
     category: "program",
   },
   {
     id: 7,
     title: "اینترنت 3",
-    img: "/image/portfolio/portfolio-1.jpg",
+    img: "/images/portfolio/portfolio-7.jpg",
     category: "internet",
   },
   {
     id: 8,
     title: "محصول 3",
-    img: "/image/portfolio/portfolio-1.jpg",
+    img: "/images/portfolio/portfolio-8.jpg",
     category: "product",
   },
   {
     id: 9,
     title: "برنامه 3",
-    img: "/image/portfolio/portfolio-1.jpg",
+    img: "/images/portfolio/portfolio-9.jpg",
     category: "program",
   },
 ];
@@ -125,7 +126,16 @@ function Portfolio() {
               اینترنت
             </button>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {selectedProducts.map((product) => (
+              <PortfolioItem
+                key={product.id}
+                category={product.category}
+                img={product.img}
+                title={product.title}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </>
