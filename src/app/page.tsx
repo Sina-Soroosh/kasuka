@@ -4,6 +4,7 @@ import CTA from "@/components/templates/CTA";
 import Hero from "@/components/templates/Hero";
 import Portfolio from "@/components/templates/Portfolio";
 import Services from "@/components/templates/Services";
+import Testimonials from "@/components/templates/Testimonials";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Services />
       <CTA />
       <Portfolio />
+      <Testimonials />
     </>
   );
 }
