@@ -1,3 +1,4 @@
+import Footer from "@/components/modules/Footer/Footer";
 import Header from "@/components/modules/Header/Header";
 import About from "@/components/templates/About";
 import CTA from "@/components/templates/CTA";
@@ -18,6 +19,7 @@ export default function Home() {
       <Portfolio />
       <Testimonials />
       <Team />
+      <Footer />
     </>
   );
 }
