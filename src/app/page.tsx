@@ -4,6 +4,7 @@ import CTA from "@/components/templates/CTA";
 import Hero from "@/components/templates/Hero";
 import Portfolio from "@/components/templates/Portfolio";
 import Services from "@/components/templates/Services";
+import Team from "@/components/templates/Team";
 import Testimonials from "@/components/templates/Testimonials";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <CTA />
       <Portfolio />
       <Testimonials />
+      <Team />
     </>
   );
 }
